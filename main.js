@@ -80,13 +80,13 @@ class Particle {
         }
 
         this.scrp();
-        let c = env.img.getContext("2d");
-        c.fillStyle = this.col;
-        c.strokeStyle = this.str;
-        c.beginPath();
-        c.arc(this.x, this.y, 2.5, 0, Math.PI() * 2);
-        c.stroke();
-        c.fill();
+        let cv = env.img.getContext("2d");
+        cv.fillStyle = this.col;
+        cv.strokeStyle = this.str;
+        cv.beginPath();
+        cv.arc(this.x, this.y, 2.5, 0, Math.PI() * 2);
+        cv.stroke();
+        cv.fill();
       }
     }
   }
